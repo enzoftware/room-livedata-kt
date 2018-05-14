@@ -1,5 +1,4 @@
-# animandroid-demo
-💃 Animations for android developers 
+# RxNotes 
+Reactive android app
 
-## Dependencies
-- [Transitions Everywhere](https://github.com/andkulikov/transitions-everywhere)
+
