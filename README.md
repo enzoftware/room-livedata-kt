@@ -1,4 +1,3 @@
-# RxNotes 
-Reactive android app
+#  :rocket: Jetpack in examples
 
 
