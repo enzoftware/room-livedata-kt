@@ -1,3 +1,0 @@
-#  :rocket: Jetpack in examples
-
-
