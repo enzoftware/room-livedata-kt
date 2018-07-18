@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
 import android.view.WindowManager
+import kotlinx.android.synthetic.main.activity_intro.*
 
 class IntroActivity : AppCompatActivity() {
 
@@ -14,6 +15,10 @@ class IntroActivity : AppCompatActivity() {
         setContentView(R.layout.activity_intro)
 
         supportActionBar!!.hide()
+
+        enter_room.setOnClickListener {
+            //TODO : GO TO ACTIVITY MAIN
+        }
 
     }
 }
