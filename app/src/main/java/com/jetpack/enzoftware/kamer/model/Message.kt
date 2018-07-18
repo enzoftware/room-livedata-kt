@@ -1,4 +1,18 @@
 package com.jetpack.enzoftware.kamer.model
 
-class Message {
+import android.arch.persistence.room.ColumnInfo
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
+
+@Entity(tableName = "Message")
+abstract class Message {
+    @PrimaryKey(autoGenerate = true)
+    var id: Int ?= null
+
+    @ColumnInfo(name = "content")
+    var content : String ?= null
+
+    constructor(content:String){
+        this.content = content
+    }
 }
