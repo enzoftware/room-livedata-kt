@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Room-LiveData.iml" filepath="$PROJECT_DIR$/Room-LiveData.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kamer.iml" filepath="$PROJECT_DIR$/kamer.iml" />
     </modules>
   </component>
 </project>
