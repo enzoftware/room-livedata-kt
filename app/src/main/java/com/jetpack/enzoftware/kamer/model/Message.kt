@@ -5,7 +5,7 @@ import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
 @Entity(tableName = "Message")
-abstract class Message {
+class Message {
     @PrimaryKey(autoGenerate = true)
     var id: Int ?= null
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Room</string>
+    <string name="app_name">Kamer</string>
     <string name="enter_message">Enter message</string>
     <string name="android_room_example">Android Room Example</string>
     <string name="enter_room">Enter room</string>

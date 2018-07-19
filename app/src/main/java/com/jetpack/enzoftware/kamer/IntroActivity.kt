@@ -1,5 +1,6 @@
 package com.jetpack.enzoftware.kamer
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
@@ -17,7 +18,7 @@ class IntroActivity : AppCompatActivity() {
         supportActionBar!!.hide()
 
         enter_room.setOnClickListener {
-            //TODO : GO TO ACTIVITY MAIN
+            startActivity(Intent(this,RoomActivity::class.java))
         }
 
     }
