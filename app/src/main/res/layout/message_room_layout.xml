@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/deleteicon"
+        android:src="@drawable/delete"
         android:layout_gravity="center"/>
 
 
