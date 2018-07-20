@@ -15,8 +15,8 @@ class MessageRoomAdapter : RecyclerView.Adapter<MessageRoomViewHolder> {
     private var messageList : List<Message>
     private var context: Context
 
-    constructor(context: Context, messageList: List<Message>){
-        this.messageList = messageList
+    constructor(context: Context, messageList: List<Message>?){
+        this.messageList = messageList!!
         this.context = context
     }
 
