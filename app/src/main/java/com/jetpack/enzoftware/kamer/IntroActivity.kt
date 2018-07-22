@@ -19,6 +19,7 @@ class IntroActivity : AppCompatActivity() {
 
         enter_room.setOnClickListener {
             startActivity(Intent(this,RoomActivity::class.java))
+            finish()
         }
 
     }

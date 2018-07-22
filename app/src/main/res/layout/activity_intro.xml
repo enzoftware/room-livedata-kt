@@ -7,12 +7,6 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary"
     tools:context=".IntroActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@drawable/room"
-        android:layout_weight="1">
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,6 +19,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorWhite"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
             android:text="@string/android_room_example"/>
         <Button

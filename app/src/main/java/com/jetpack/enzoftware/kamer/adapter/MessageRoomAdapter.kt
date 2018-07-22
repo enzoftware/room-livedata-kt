@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.jetpack.enzoftware.kamer.R
+import com.jetpack.enzoftware.kamer.dao.MessageDAO
+import com.jetpack.enzoftware.kamer.db.AppDatabase
 import com.jetpack.enzoftware.kamer.model.Message
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
@@ -37,7 +39,8 @@ class MessageRoomAdapter : RecyclerView.Adapter<MessageRoomViewHolder> {
         holder.content.text = message.content
         holder.contentDate.text = currentDate
         holder.contentDelete.setOnClickListener {
-            // TODO : DELETE A MESSAGE WHEN THAT ITEM IS CLICKED
+            val messageDAO : MessageDAO = AppDatabase.getInstance(context).message()
+            messageDAO.deleteMessage(message)
         }
 
     }
