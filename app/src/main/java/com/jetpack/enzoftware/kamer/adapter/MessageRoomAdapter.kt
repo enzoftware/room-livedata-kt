@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.jetpack.enzoftware.kamer.R
 import com.jetpack.enzoftware.kamer.model.Message
 import org.joda.time.DateTime
+import org.joda.time.format.DateTimeFormat
 import java.util.*
 
 class MessageRoomAdapter : RecyclerView.Adapter<MessageRoomViewHolder> {
@@ -32,11 +33,11 @@ class MessageRoomAdapter : RecyclerView.Adapter<MessageRoomViewHolder> {
     override fun onBindViewHolder(holder: MessageRoomViewHolder, position: Int) {
         val message = messageList[position]
         val currentDate = getCurrentDateTime()
+
         holder.content.text = message.content
         holder.contentDate.text = currentDate
         holder.contentDelete.setOnClickListener {
             // TODO : DELETE A MESSAGE WHEN THAT ITEM IS CLICKED
-
         }
 
     }
@@ -44,6 +45,8 @@ class MessageRoomAdapter : RecyclerView.Adapter<MessageRoomViewHolder> {
     private fun getCurrentDateTime(): String {
         val currentDate = Date()
         val dt = DateTime(currentDate)
-        return dt.toString()
+        val fmt  = DateTimeFormat.forPattern("dd/MM/YYYY")
+        val dateOnly : String = fmt.print(dt)
+        return dateOnly
     }
 }

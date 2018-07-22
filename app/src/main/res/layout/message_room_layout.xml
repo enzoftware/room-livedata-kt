@@ -15,7 +15,7 @@
             android:id="@+id/content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Testing the font"
+            android:text="@string/testing_the_font"
             android:textColor="@color/colorBlack"
             android:textSize="14sp"/>
 
@@ -23,7 +23,7 @@
             android:id="@+id/content-date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2nd July, 2018"
+            android:text="@string/random_date"
             android:textColor="@color/colorBlack"
             android:layout_marginTop="3dp"
             android:textSize="@dimen/_9sdp"/>
@@ -39,11 +39,11 @@
     <ImageView
         android:id="@+id/content-delete"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/delete"
-        android:layout_gravity="center"/>
+        android:src="@drawable/delete" />
 
 
 </LinearLayout>
